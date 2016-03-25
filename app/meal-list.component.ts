@@ -2,11 +2,12 @@ import { Component } from 'angular2/core';
 import { Meal } from './meal.model';
 import { MealComponent } from './meal.component';
 import { NewMealComponent } from './new-meal.component';
+import { MealDetailsComponent } from './meal-details.component';
 
 @Component({
   selector: 'meal-list',
   inputs: ['mealList'],
-  directives: [MealComponent, NewMealComponent],
+  directives: [MealComponent, NewMealComponent, MealDetailsComponent],
   template: `
     <new-meal (onSubmitNewMeal)="createMeal($event)"></new-meal>
     <meal-display *ngFor="#currentMeal of mealList"
