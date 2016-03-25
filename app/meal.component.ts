@@ -7,7 +7,7 @@ import { MealDetailsComponent} from './meal-details.component';
   inputs: ['meal'],
   directives: [MealDetailsComponent],
   template: `
-    <h3 (click)="mealClicked()">{{ meal.name }}</h3>
+    <h2 (click)="mealClicked()">{{ meal.name }}</h2>
     <meal-details *ngIf="detailShow" [meal]="meal"></meal-details>
   `
 })
