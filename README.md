@@ -18,15 +18,14 @@ _This web app is designed to take user inputs for a meal name, description and c
 #### Installation
 
 * After cloning the repo, you will need to install dependencies...
-
-
-    npm install
-    bower install
+    In your terminal, run:
+    "npm install", then
+    "bower install"
 
 * Gulp is used to handle both building the site and launching a server to host the site...
-
-    gulp build
-    gulp serve
+    In your terminal, run:
+    "gulp build", then
+    "gulp serve"
 
 ## Known Bugs
 
