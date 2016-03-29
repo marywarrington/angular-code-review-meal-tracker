@@ -11,16 +11,18 @@ export class CaloriesPipe implements PipeTransform {
     var desiredCalories = args[0];
     console.log(desiredCalories);
     if (desiredCalories === "unhealthy") {
-      return input.filter((meal) => {
-        if (parseInt(meal.calories) > 300) {
-          return true;
-        }
+      return input.filter(function(meal) {
+        // if (parseInt(meal.calories) > 300) {
+        //   return true;
+        // }
+        return parseInt(meal.calories) > 300;
       });
     } else if (desiredCalories === "healthy") {
       return input.filter((meal) => {
-        if (parseInt(meal.calories) <= 300) {
-          return true;
-        }
+        // if (parseInt(meal.calories) <= 300) {
+        //   return true;
+        // }
+        return parseInt(meal.calories) <= 300;
       });
     } else {
       return input;
